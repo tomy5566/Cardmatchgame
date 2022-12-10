@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+   
+/* ----我是分隔----- */
+
+
+#cards {
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+.card {
+	flex:0 1  7% ; /* 每個 item 分配容器寬度   flex-grow → flex-shrink → flex-basis */
+	height: 8vw; /* 依視窗的寬度等比例變化 */
+	border: 2px solid #e0e0e0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	margin: 2px; /* 卡片邊距 */
+	box-sizing: border-box; /* 設定 box-sizing*/
+
+  }
+
+.card img {
+	max-width: 30%;
+	align-self: center;
+  }
+
+.card p {
+	margin: 3px;
+	font-size: 10px;
+  }
+
+.card p:last-child {
+	transform: rotate(180deg);
+  }
+
+.back {
+    background: url('/images/ExportedContentImage_00.png');
+    background-size: cover;
+  }
+
+.paired {
+	/* background-color: #dae0e3; */
+	background-color: red;
+  }
+
+
+/* ----我是分隔----- */
+
