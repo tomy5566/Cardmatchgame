@@ -93,7 +93,15 @@ const view = {
 
   pairCard(card) {
     card.classList.add('paired')
-  }
+  },
+
+  renderScore(score) {
+    document.querySelector(".score").textContent = `Score: ${score}`;
+  },
+  
+  renderTriedTimes(times) {
+    document.querySelector(".tried").textContent = `You've tried: ${times} times`;
+  },
 
 
 }
@@ -105,7 +113,9 @@ const model = {
   //被翻開的卡片。使用者每次翻牌時，就先把卡片丟進這個牌組，集滿兩張牌時就要檢查配對有沒有成功，檢查完以後，這個暫存牌組就需要清空。
   isRevealedCardsMatched() {
     return this.revealedCards[0].dataset.index % 13 === this.revealedCards[1].dataset.index % 13 
-  }
+  },
+  score: 0,
+  triedTimes: 0
 
 }
 
@@ -124,6 +134,7 @@ const controller = {
     }
     switch (this.currentState) {
       case GAME_STATE.FirstCardAwaits:
+        view.renderTriedTimes(++model.triedTimes)  //算次數
         view.flipCard(card)
         model.revealedCards.push(card)
         this.currentState = GAME_STATE.SecondCardAwaits
@@ -134,6 +145,7 @@ const controller = {
 
         if (model.isRevealedCardsMatched()) {
           // 配對成功
+          view.renderScore(model.score += 10)  //成功加十分
           this.currentState = GAME_STATE.CardsMatched
           view.pairCard(model.revealedCards[0])
           view.pairCard(model.revealedCards[1])
