@@ -2,7 +2,7 @@
 card_pair_找出相同數字的牌 JS小遊戲
 
 ## 主要介紹
-使用JavaScript創建小遊戲，練習狀態與程式碼模組化。
+使用JavaScript創建小遊戲，練習狀態與程式碼模組化，使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。
 
 ## DEMO link
 [https://tomy5566.github.io/Cardmatchgame/](https://tomy5566.github.io/Cardmatchgame/)
@@ -15,7 +15,8 @@ card_pair_找出相同數字的牌 JS小遊戲
 
 ## JavaScript 使用技術介紹(待修正)
 
-1. 使用 AJAX : [axios](https://github.com/axios/axios)串接兩個電影資訊的 API，取得資料。
+1. 使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。程式出問題時，就只需要去對應的區塊查看。
+2. 定義程式狀態，判斷現在的流程(狀態)在哪裡，並將所有狀態命名在一組變數中，決定程式目前要執行什麼動作。
 2. 使用[Bootstrap](https://getbootstrap.com/)建立版型，包含導覽列，資訊卡片，跳出資訊視窗，RWD設計與漢堡選單。
 3. 建立動態電影陣列，並利用 [Element.innerHTML](https://developer.mozilla.org/zh-TW/docs/Web/API/Element/innerHTML) 渲染卡片清單。
 4. 利用 [includes](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)方法比對字串，與陣列的 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 方法篩選條件，應用於搜尋功能中。
