@@ -31,11 +31,8 @@ card_pair_找出相同數字的牌 JS小遊戲
 
 
 ## 介面展示(待修正)
-PC
-![image](https://github.com/tomy5566/movielist/blob/main/movie_demo_gif.gif)
+![image](https://github.com/tomy5566/Cardmatchgame/blob/main/cadrgame_demo.gif)
 
-RWD
-![image](https://github.com/tomy5566/movielist/blob/main/movie_demo_mb_gif.gif)
 
 
 ## 參考資料
