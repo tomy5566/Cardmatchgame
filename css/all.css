@@ -111,7 +111,7 @@ table {
 
 .card p {
 	margin: 3px;
-	font-size: 10px;
+	font-size: 20px;
   }
 
 .card p:last-child {
@@ -119,13 +119,13 @@ table {
   }
 
 .back {
-    background: url('../images/ExportedContentImage_00.png');
+    background: url('../images/ExportedContentImage_00.svg');
     background-size: cover;
   }
 
 .paired {
-	/* background-color: #dae0e3; */
-	background-color: red;
+	background-color: gray;
+	/* background-color: red; */
   }
 
 

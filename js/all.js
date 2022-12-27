@@ -160,7 +160,7 @@ const controller = {
             view.flipCard(model.revealedCards[1])
             model.revealedCards = []
             this.currentState = GAME_STATE.FirstCardAwaits
-          }, 1500)
+          }, 1200)
         }
 
 
