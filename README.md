@@ -1,5 +1,5 @@
-# Card Match Game練習專案readme
-card_pair_找出相同數字的牌 JS小遊戲
+# Card Match Game練習專案 Readme
+找出相同數字的撲克牌 JS 配對小遊戲
 
 ## 主要介紹
 使用JavaScript創建小遊戲，練習狀態與程式碼模組化，使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。
