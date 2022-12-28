@@ -2,7 +2,7 @@
 找出相同數字的撲克牌 JS 配對小遊戲
 
 ## 主要介紹
-使用JavaScript創建小遊戲，練習狀態與程式碼模組化，使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。
+使用JavaScript創建翻牌配對的撲克牌小遊戲，練習狀態與程式碼模組化，使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。
 
 ## DEMO link
 [https://tomy5566.github.io/Cardmatchgame/](https://tomy5566.github.io/Cardmatchgame/)
