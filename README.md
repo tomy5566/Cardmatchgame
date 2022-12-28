@@ -15,13 +15,12 @@ card_pair_找出相同數字的牌 JS小遊戲
 
 ## JavaScript 使用技術介紹(待修正)
 
-1. 使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)。程式出問題時，就只需要去對應的區塊查看。
-2. 定義程式狀態，判斷現在的流程(狀態)在哪裡，並將所有狀態命名在一組變數中，決定程式目前要執行什麼動作。
-2. 使用[Bootstrap](https://getbootstrap.com/)建立版型，包含導覽列，資訊卡片，跳出資訊視窗，RWD設計與漢堡選單。
-3. 建立動態電影陣列，並利用 [Element.innerHTML](https://developer.mozilla.org/zh-TW/docs/Web/API/Element/innerHTML) 渲染卡片清單。
-4. 利用 [includes](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)方法比對字串，與陣列的 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 方法篩選條件，應用於搜尋功能中。
-5. 利用 [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)保存篩選後的資料，將資料使用在其他同網域下的分頁。
-6. 建立分頁選單[paginator](https://getbootstrap.com/docs/4.0/components/pagination/)，可自動態動產生分頁，利於瀏覽。
+1. 使用MVC架構(Model(資料)、View(畫面)、Controller(控制) 三個區塊)建構程式碼。和資料有關的程式碼歸類在 model。和畫面呈現有關的程式碼歸類在 view 。再由 controller 發號施令進行動作。
+2. 練習定義程式狀態(state management)，判斷現在的流程(狀態)在哪裡，並將所有狀態命名在一組變數中，決定程式目前要執行什麼動作。
+2. 使用[Bootstrap](https://getbootstrap.com/)建立版型。並運用 flex-basis、flex-grow、flex-shrink 設定每排 13 張的卡片排版。
+3. 利用 Array.from 生成數字陣列，並使用 :last-child 選擇器和 transform 屬性，搭配CSS製作倒轉的卡片數字，呈現出撲克牌52張的數字與花色畫面。
+4. 使用 Fisher-Yates Shuffle 洗牌演算法，讓每次重新整理得牌能隨機出現在畫面中。
+5. 練習將程式碼和函式模組化，並搭配MVC架構整理，以利程式出問題時，就只需要去對應的區塊查看。
  
 
 ## 功能介紹
@@ -30,7 +29,7 @@ card_pair_找出相同數字的牌 JS小遊戲
 - 上方設計計分功能，以及翻牌次數的統計。
 
 
-## 介面展示(待修正)
+## 介面展示
 ![image](https://github.com/tomy5566/Cardmatchgame/blob/main/cadrgame_demo.gif)
 
 
