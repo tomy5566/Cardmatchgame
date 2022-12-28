@@ -13,7 +13,7 @@
 - JavaScript
 - [Bootstrap](https://getbootstrap.com/)
 
-## JavaScript 使用技術介紹(待修正)
+## JavaScript 使用技術介紹
 
 1. 使用[MVC架構](https://zh.wikipedia.org/zh-tw/MVC)(Model(資料)、View(畫面)、Controller(控制) 三個區塊)建構程式碼。和資料有關的程式碼歸類在 model。和畫面呈現有關的程式碼歸類在 view 。再由 controller 發號施令進行動作。
 2. 練習定義程式狀態(state management)，判斷現在的流程(狀態)在哪裡，並將所有狀態命名在一組變數中，決定程式目前要執行什麼動作。
